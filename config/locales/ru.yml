@@ -1,0 +1,90 @@
+ru:
+
+  activerecord:
+    attributes:
+      blog:
+        model_name: Блог
+        name: Имя
+        permalink: Путь
+      post:
+        model_name: Запись
+        title: Заголовок
+        posted_at: Дата Размещения
+        body: Текст
+        live: Опубликован
+        tags: Теги
+      post_category:
+        model_name: Категория
+        name: Имя
+        permalink: Ссылка
+
+  spree:
+
+    admin:
+      subnav:
+        posts: Записи
+
+    blogs:
+      admin:
+        blogs:
+          new:
+            new_blog: Новый Блог
+          index:
+            new_blog: Новый Блог
+
+
+        posts:
+          new:
+            new_post: Новая Запись
+        post_products:
+          index:
+            add_related_product: Добавить Связанные Товары
+        post_categories:
+          index:
+            manage_categories: Управлять Категориями
+        new:
+          new_category: Новая Категория
+        edit:
+          edit_category: Редактировать Категория
+
+        shared:
+          post_tabs:
+            post_details: Информация о Записи
+            editing_post: Редактируем Запись
+            related_products: Связанные Товары
+            post_categories: Категории
+      comments: Комментарии
+      home:
+        title: Свежие Записи
+      archive: Архив Блога
+      no_posts: В блоге нет записей!
+      posts:
+        index:
+          blog: Блог
+          rss: Подписаться по RSS
+        archive:
+          where_to_next: Where to next?
+          go_to_store: "Перейти в Магазин"
+          back_to_posts: "Вернуться в блог"
+      settings:
+        blogs: Управлять Блогами
+        explain_blogs: Добавить или Редактировть блоги.
+        disqus: Настройки комментирования Disqus
+        explain_disqus: Настройки комментариев Disqus.
+        disqus_shortname: Краткое имя Disqus
+      shared:
+        sidebar:
+          recent_posts: Свежие Записи
+          categories: Категории
+          archives: Архив
+          view_archive: Показать Ахрив Полностью
+          tags: Теги
+        preview:
+          read_more: Далее
+        post_tabs:
+          editing_post: Редактируем Запись
+          post_details: Информация о Щаписи
+          related_products: Связанные Товары
+          post_categories: Категории
+      subnav:
+        posts: Записи в Блоге
