@@ -39,17 +39,17 @@ class Spree::Post < ActiveRecord::Base
   end
   	
 	def rendered_preview
-    preview = body.split(/<hr[^>]+>/i).first
+    preview = body.split(/<hr[^>]*>/i).first
 
     render(preview)
   end
 
   def has_preview?
-    body =~ /<hr[^>]+>/i
+    body =~ /<hr[^>]*>/i
   end
 
 	def rendered_body
-	  render(body.gsub(/<hr[^>]+>/i, ""))
+	  render(body.gsub(/<hr[^>]*>/i, ""))
   end
 		
 	def preview_image
