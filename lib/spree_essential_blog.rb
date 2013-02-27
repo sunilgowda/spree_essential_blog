@@ -1,7 +1,8 @@
 require "spree_essentials"
 require "acts-as-taggable-on"
 
-require "spree_essential_blog/version"
+require "spree_essential_blog/engine"
+require "spree_essential_blog/constraints"
 require "spree_essential_blog/engine"
 
 module SpreeEssentialBlog

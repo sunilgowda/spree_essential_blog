@@ -1,12 +1,3 @@
-class BlogsConstraints
-  def self.matches? request
-    blogs.include? request.params[:blog_id]
-  end
-
-  def self.blogs
-    @@__blogs ||= Spree::Blog.all.map &:permalink
-  end
-end
 
 Spree::Core::Engine.routes.append do
 
@@ -29,7 +20,7 @@ Spree::Core::Engine.routes.append do
       resource :disqus_settings
     end
 
-    constraints BlogsConstraints do
+    constraints SpreeEssentialBlog::Constraints do
       constraints(
         :year  => /\d{4}/,
         :month => /\d{1,2}/,
