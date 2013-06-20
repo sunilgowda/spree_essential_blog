@@ -6,7 +6,7 @@
       <legend><%= t('.manage_categories') %></legend>
       <table class="index">
         <% @post_categories.each_with_index do |category, index| -%>
-          <tr id="<%= dom_id(category) %>" class="<%= index % 2 == 0 ? 'alt' : 'row' %>">
+          <tr id="<%= dom_id(category) %>" class="<%= index % 2 == 0 ? 'even' : 'odd' %>">
             <td>
               <%= check_box_tag "post[post_category_ids][]", category.id, @post.post_categories.include?(category), :id => "post_category_id_#{index}" -%>
               <%= label_tag "post_category_id_#{index}", category.name -%>
