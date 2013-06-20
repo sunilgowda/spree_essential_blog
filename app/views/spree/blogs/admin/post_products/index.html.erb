@@ -5,10 +5,8 @@
 <%= form_for [:admin, @post ] do |f| %>
 
   <p class="field">
-    <label>
-      Choose products
-      <%= product_picker_field "post[product_ids_string]", @post.product_ids_string %>
-    </label>
+    <%= label_tag "post[product_ids_string]", "Choose products" %>
+    <%= hidden_field_tag "post[product_ids_string]", @post.product_ids.join(","), :class => "product_picker fullwidth" %>
   </p>
   
   <p class="actions">
